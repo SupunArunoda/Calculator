@@ -2,13 +2,37 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <style type="text/css">
+	button {
+		width: 50px;
+		height: 30px;
+	}
+  </style>
   <title>Calculator</title>
+  
 </head>
 <body>
   <h1>My Calculator</h1>
   <input type="text" id="input_area"/>
   <label id="result">--</label>
   <br>
+  <button id="1"> 1 </button>
+  <button id="2"> 2 </button>
+  <button id="3"> 3 </button>  
+  <button id="+"> + </button></br>
+  <button id="4"> 4 </button>
+  <button id="5"> 5 </button>
+  <button id="6"> 6 </button>
+  <button id="-"> - </button></br>
+  <button id="7"> 7 </button>
+  <button id="8"> 8 </button>
+  <button id="9"> 9 </button>
+  <button id="*"> * </button></br>
+  <button id="0"> 0 </button>
+  <button id="00"> 00 </button>  
+  <button id="="> = </button>
+  <button id="\"> \ </button></br>
+  
   <input type="Submit" id="calculatebtn" value="Calculate">
   <script src="calculator.js"></script>
   <script type="text/javascript">
@@ -16,5 +40,66 @@
 	var input = document.getElementById('input_area').value;
         document.getElementById('result').innerHTML = eval(input);
     }
+	
+	document.getElementById('1').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("1");
+    }
+	
+	document.getElementById('2').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("2");
+    }
+	
+	document.getElementById('3').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("3");
+    }
+	
+	document.getElementById('4').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("4");
+    }
+	
+	document.getElementById('5').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("5");
+    }
+	
+	document.getElementById('6').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("6");
+    }
+	
+	document.getElementById('7').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("7");
+    }
+	
+	document.getElementById('8').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("8");
+    }
+	
+	document.getElementById('9').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("9");
+    }
+	
+	document.getElementById('0').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("0");
+    }
+	
+	document.getElementById('+').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("+");
+    }
+	
+	document.getElementById('-').onclick = function(e){		
+		var input = document.getElementById('input_area').value;		
+		document.getElementById('input_area').value = input.concat("-");
+    }
+	
   </script>
 </body>
