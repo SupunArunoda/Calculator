@@ -7,6 +7,11 @@ function minus(a, b) {
 }
 
 
+
 function logs(a){
 	return Math.log10(a);
+}
+
+function getsquareroot(a) {
+    return Math.sqrt(a);
 }
