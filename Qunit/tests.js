@@ -7,5 +7,9 @@ QUnit.test("Testing Plus function", function(assert) {
 });
 
 QUnit.test("Testing Plus function with failing", function(assert) {
-  assert.equal(5, plus(2, 2), "2 + 2 is 5");
+  assert.equal(4, plus(2, 2), "2 + 2 is 5");
 });
+QUnit.test("Testing Sqrt function with failing", function (assert) {
+    assert.equal(10, getsquareroot(100), "sqrt(100) is 10");
+});
+
